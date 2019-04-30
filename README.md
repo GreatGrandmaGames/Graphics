@@ -1,18 +1,20 @@
 # Graphics
 Create 3D Geometry On The Fly
 
-This documents gives an overview of the Graphics Grandma Asset Package Unity asset package. The Grandma Asset Packages are developed by Elliot Winch and Carlos-Michael Rodriguez, and are available here. (A repo dedicated to Graphics will be up soon, I promise!)
-Classes
-Renderable : MonoBehaviour < abstract
+This documents gives an overview of the Graphics Grandma Asset Package Unity asset package. The Grandma Asset Packages are developed by Elliot Winch and Carlos-Michael Rodriguez, and are available here. 
+
+
+## Classes ##
+### Renderable : MonoBehaviour < abstract ###
 RequireComponent: MeshFilter, MeshRenderer
 
 A Renderable object is an object which can generate a mesh at runtime and render it in a scene. 
 
-Methods:
-public    Render()
-protected GenerateMesh() : Mesh < abstract
+Methods:\n
+public    Render()\n
+protected GenerateMesh() : Mesh < abstract\n
 
-Prism : Renderable 
+### Prism : Renderable ###
 A Prism, in geometry, is “a solid geometric figure whose two end faces are similar, equal, and parallel rectilinear figures, and whose sides are parallelograms.” The Prism Component allows for the creation of Prism meshes. Additional parameters allow the user to create shapes based on Prisms.
 
 Inspector Variables: 
@@ -51,4 +53,5 @@ Inspector Variables:
 
 
 Methods:
+\n
 protected GenerateMesh() : Mesh < Implementation

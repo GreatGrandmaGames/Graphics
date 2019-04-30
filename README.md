@@ -9,23 +9,23 @@ RequireComponent: MeshFilter, MeshRenderer
 A Renderable object is an object which can generate a mesh at runtime and render it in a scene. 
 
 Methods:
-+ Render()
-/# GenerateMesh() : Mesh < abstract
+Render()
+GenerateMesh() : Mesh < abstract
 
 Prism : Renderable 
 A Prism, in geometry, is “a solid geometric figure whose two end faces are similar, equal, and parallel rectilinear figures, and whose sides are parallelograms.” The Prism Component allows for the creation of Prism meshes. Additional parameters allow the user to create shapes based on Prisms.
 
 Inspector Variables: 
-        int vertCount = 6
-Range(3,60)
-The number of vertices of the end face
-For example, three would create a triangular prism. Four would create a cuboid. More than twenty creates a good approximation of a cylinder.
-        Vector2 shear = Vector2.zero
-Shear is an offset applied to the bottom end face.
-For each top end face vertex vt, there exists some bottom end face vertex vb. The shear is the x-y distance between vt and vb.
-        Vector2 frustumScale = Vector2.one
-The factor by which the radius is multiplied when creating the bottom end face
-        float truncationAngle = 0f
+ + int vertCount = 6
+        + Range(3,60)
+        +The number of vertices of the end face
+        +For example, three would create a triangular prism. Four would create a cuboid. More than twenty creates a good approximation of a cylinder.
++ Vector2 shear = Vector2.zero
+        + Shear is an offset applied to the bottom end face.
+        + For each top end face vertex vt, there exists some bottom end face vertex vb. The shear is the x-y distance between vt and vb.
++ Vector2 frustumScale = Vector2.one
+        +The factor by which the radius is multiplied when creating the bottom end face
++ float truncationAngle = 0f
 Measured in Radians
 The incline of the bottom end face.
         float verticalSquash = 1f

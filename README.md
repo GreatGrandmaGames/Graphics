@@ -17,12 +17,12 @@ A Prism, in geometry, is “a solid geometric figure whose two end faces are sim
 
 Inspector Variables: 
  * int vertCount = 6
-        * Range(3,60)
-        *The number of vertices of the end face
-        * For example, three would create a triangular prism. Four would create a cuboid. More than twenty creates a good approximation of a cylinder.
+    * Range(3,60)
+    * The number of vertices of the end face
+    * For example, three would create a triangular prism. Four would create a cuboid. More than twenty creates a good approximation of a cylinder.
 * Vector2 shear = Vector2.zero
-        * Shear is an offset applied to the bottom end face.
-        * For each top end face vertex vt, there exists some bottom end face vertex vb. The shear is the x-y distance between vt and vb.
+    * Shear is an offset applied to the bottom end face.
+    * For each top end face vertex vt, there exists some bottom end face vertex vb. The shear is the x-y distance between vt and vb.
 * Vector2 frustumScale = Vector2.one
         * The factor by which the radius is multiplied when creating the bottom end face
 * float truncationAngle = 0f

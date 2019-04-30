@@ -24,30 +24,30 @@ Inspector Variables:
     * Shear is an offset applied to the bottom end face.
     * For each top end face vertex vt, there exists some bottom end face vertex vb. The shear is the x-y distance between vt and vb.
 * Vector2 frustumScale = Vector2.one
-        * The factor by which the radius is multiplied when creating the bottom end face
+    * The factor by which the radius is multiplied when creating the bottom end face
 * float truncationAngle = 0f
-        * Measured in Radians
-        * The incline of the bottom end face.
+    * Measured in Radians
+    * The incline of the bottom end face.
 * float verticalSquash = 1f
-        * The vertices in the end faces are positioned along an ellipse. ‘Vertical squash” is the ratio between the semi-major axis and the semi-minor axis of the end faces. 
-               * N.B. we use “Vertical Squash” rather than Eccentricity here, since Eccentricity can create (hyper)parabola, which is not desired behaviour here). 
+    * The vertices in the end faces are positioned along an ellipse. ‘Vertical squash” is the ratio between the semi-major axis and the semi-minor axis of the end faces. 
+           * N.B. we use “Vertical Squash” rather than Eccentricity here, since Eccentricity can create (hyper)parabola, which is not desired behaviour here). 
 * FaceType faceType = FaceType.Flat
-        * Options: Flat, Round
-        * The round face type produces one smoothed side face; the flat face type will produced many, defined faces.The round face will appear to look cylindrical. 
+    * Options: Flat, Round
+    * The round face type produces one smoothed side face; the flat face type will produced many, defined faces.The round face will appear to look cylindrical. 
 * GeometryUtility.TopType topType = GeometryUtility.TopType.Flat
-        * Options: Flat, Pointy
+    * Options: Flat, Pointy
 * float thickness = 0.5f
-        * The distance between the end faces
+    * The distance between the end faces
 * float radius = 1f
-        * The distance at which vertices are positioned from the center of the end face
+    * The distance at which vertices are positioned from the center of the end face
 * bool hideTop
-        * Don’t render the top end face
+    * Don’t render the top end face
 * bool hideBottom
-        * Don’t render the bottom end face
+    * Don’t render the bottom end face
 * bool showInsides
-        * Render the inside faces of the prism?
+    * Render the inside faces of the prism?
 * List<int> hiddenSideFaces
-        * Don’t render the ith side faces
+    * Don’t render the ith side faces
 
 
 Methods:
